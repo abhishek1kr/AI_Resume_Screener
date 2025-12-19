@@ -2,7 +2,7 @@
 
 An intelligent web application that helps recruiters automatically screen, parse, and rank resumes against job descriptions.
 
-## 🚀 Key Features
+##  Key Features
 
 - **Automated Resume Parsing**: Extracts text from PDF and DOCX formats.
 - **Smart Skill Extraction**: Identifies technical skills using NLP usage patterns.
@@ -16,19 +16,19 @@ An intelligent web application that helps recruiters automatically screen, parse
 - **Multi-Resume Support**: Process dozens of resumes in seconds.
 - **Interactive UI**: Clean, drag-and-drop interface for ease of use.
 
-## 🛠️ Technology Stack
+##  Technology Stack
 
 - **Backend**: Python, Flask
 - **NLP / ML**: scikit-learn, NLTK/Spacy (logic implemented with regex/set operations for speed), TF-IDF Vectorizer
 - **Frontend**: HTML5, CSS3 (Modern Glassmorphism Design), JavaScript
 - **File Handling**: PyPDF2, python-docx
 
-## 📋 Prerequisites
+##  Prerequisites
 
 - Python 3.8+
 - pip (Python Package Manager)
 
-## 📦 Installation
+##  Installation
 
 1. **Clone the repository** (or download files):
    ```bash
@@ -49,13 +49,13 @@ An intelligent web application that helps recruiters automatically screen, parse
 4. **Access the UI**:
    Open you browser and navigate to: `http://127.0.0.1:5000`
 
-## 💡 How to Use
+##  How to Use
 
 1. **Paste Job Description**: Copy the text of the job description into the dedicated text area.
 2. **Upload Resumes**: Drag & drop multiple PDF or DOCX files into the upload zone.
 3. **Analyze**: Click the "Analyze Resumes" button.
 4. **View Results**: The candidates will be ranked by relevance score, with missing skills highlighted.
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
