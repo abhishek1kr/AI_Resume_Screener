@@ -1,4 +1,4 @@
-# AI-Powered Resume Screener
+# AI Resume Screener
 
 An intelligent web application that helps recruiters automatically screen, parse, and rank resumes against job descriptions.
 
