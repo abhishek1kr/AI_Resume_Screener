@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Resume Screener</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>AI Resume Screener</h1>
+            <p>Smartly match candidates to your job descriptions</p>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <div class="card job-desc-card">
+                    <h2>Job Description</h2>
+                    <textarea id="job-description" placeholder="Paste the job description here..."></textarea>
+                </div>
+
+                <div class="card upload-card">
+                    <h2>Upload Resumes</h2>
+                    <div class="drop-zone" id="drop-zone">
+                        <span class="drop-zone__prompt prompt">Drag & drop resumes here or click to upload</span>
+                        <input type="file" name="resumes" class="drop-zone__input" id="resume-upload" multiple
+                            accept=".pdf,.docx">
+                    </div>
+                </div>
+            </div>
+
+            <button id="analyze-btn">Analyze Resumes</button>
+
+            <div id="results-section" class="results-section hidden">
+                <h2>Analysis Results</h2>
+                <div class="table-wrapper">
+                    <table id="results-table">
+                        <thead>
+                            <tr>
+                                <th>Rank</th>
+                                <th>Candidate / File</th>
+                                <th>Job Fit Probability</th>
+                                <th>Exp. Level</th>
+                                <th>Match Score</th>
+                                <th>Missing Skills</th>
+                                <th>Feedback</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Results will be injected here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
